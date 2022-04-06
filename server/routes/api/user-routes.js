@@ -2,8 +2,7 @@ const router = require('express').Router();
 const {
   createUser,
   getSingleUser,
-  saveBook,
-  deleteBook,
+  saveAppt,
   login,
 } = require('../../controllers/user-controller');
 
@@ -17,6 +16,6 @@ router.route('/login').post(login);
 
 router.route('/me').get(authMiddleware, getSingleUser);
 
-router.route('/books/:bookId').delete(authMiddleware, deleteBook);
+// router.route('/books/:bookId').delete(authMiddleware, deleteBook);
 
 module.exports = router;
