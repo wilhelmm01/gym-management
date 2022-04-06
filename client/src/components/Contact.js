@@ -38,11 +38,19 @@ function Contact() {
 
   return (
     <div>
-      <p className="content is-medium">Contact Me</p>
+      <p className="content is-medium">Contact a Trainer Today</p>
       <hr />
       <form id="contact-form" onSubmit={handleSubmit}>
         <div className="field">
-          <label className="label" htmlFor="name">Name</label>
+          <label for="trainer">Choose a trainer:</label>
+          <select name="trainer">
+              <option value="trainer-1">Trainer 1</option>
+              <option value="trainer-1">Trainer 2</option>
+              <option value="trainer-1">Trainer 3</option>
+              <option value="trainer-1">Trainer 4</option>
+              <option value="trainer-1">Trainer 5</option>
+          </select>
+          <label className="label" htmlFor="name">Your Name</label>
           <input className="input" type="text" name="name" defaultValue={name} onBlur={handleChange} />
         </div>
         <div className="field">
