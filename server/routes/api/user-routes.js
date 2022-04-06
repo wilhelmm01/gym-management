@@ -2,7 +2,6 @@ const router = require('express').Router();
 const {
   createUser,
   getSingleUser,
-  saveAppt,
   login,
 } = require('../../controllers/user-controller');
 
