@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar, Nav, Container, Modal, Tab, NavItem } from 'react-bootstrap';
-import Login from '../pages/Login';
-import Signup from '../pages/Signup';
+import { Navbar, Nav, Container, Modal, Tab, } from 'react-bootstrap';
+import Login from '../components/LoginForm';
+import Signup from '../components/SignupForm';
+// import Reviews from '../components/Reviews';
+// import Trainers from '../components/Trainers';
 
 import Auth from '../utils/auth';
 
@@ -20,13 +22,13 @@ const AppNavbar = () => {
           <Navbar.Toggle aria-controls='navbar' />
           <Navbar.Collapse id='navbar'>
             <Nav className='ml-auto'>
-              <Nav.Link as={Link} to='/'>
+              <Nav.Link as={Link} to="/trainers">
                 Trainers
               </Nav.Link>
-              <Nav.Link as={Link} to="/">
+              <Nav.Link as={Link} to="/reviews">
                 Reviews
               </Nav.Link>
-              <Nav.Link as={Link} to="/">
+              <Nav.Link as={Link} to="/contact">
                 Contact Us
               </Nav.Link>
               {/* if user is logged in show saved books and logout */}
