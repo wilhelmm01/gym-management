@@ -3,16 +3,39 @@ import { Jumbotron } from 'react-bootstrap';
 
 function Reviews() {
     return (
-        <Jumbotron>
+        // <Jumbotron>
+            <body class = "reviews">
+                <h1>What our clients say</h1>
         <div class="information">
-            <span>Testimonials</span>
-            <h3>What our clients say</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, quo.</p>
-            <div class="client">
-                <h3>John Doe</h3>
+            
+            <div class = "review">
+            <h4>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, quo."</h4>
+            <p class = "from"> Anonymous, OH</p>
+            </div>
+            <div class = "review">
+            <h4>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, quo."</h4>
+            <p class = "from"> Anonymous, OH</p>
+            </div>
+            <div class = "review">
+            <h4>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, quo."</h4>
+            <p class = "from"> Anonymous, OH</p>
+            </div>
+            <div class = "review">
+            <h4>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, quo."</h4>
+            <p class = "from"> Anonymous, OH</p>
+            </div>
+            <div class = "review">
+            <h4>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, quo."</h4>
+            <p class = "from"> Anonymous, OH</p>
+            </div>
+            <div class = "review">
+            <h4>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, quo."</h4>
+            <p class = "from"> Anonymous, OH</p>
             </div>
         </div>
-        </Jumbotron>
+
+        </body>
+        // </Jumbotron>
     )
 }
 

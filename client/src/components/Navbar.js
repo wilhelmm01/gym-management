@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar, Nav, Container, Modal, Tab, } from 'react-bootstrap';
+import { Navbar, Nav, Container, Modal, Tab, NavDropdown, } from 'react-bootstrap';
 import Login from '../components/LoginForm';
 import Signup from '../components/SignupForm';
 // import Reviews from '../components/Reviews';
@@ -14,17 +14,24 @@ const AppNavbar = () => {
 
   return (
     <>
-      <Navbar bg='dark' variant='teal' expand='lg'>
+      <Navbar bg="primary" variant="dark" class="text-white">
         <Container fluid>
-          <Navbar.Brand as={Link} to='/'>
+          <Navbar.Brand as={Link} to='/homepage'>
             MGC Fitness
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='navbar' />
           <Navbar.Collapse id='navbar'>
-            <Nav className='ml-auto'>
-              <Nav.Link as={Link} to="/trainers">
+            <Nav className='ml-auto' >
+              <NavDropdown title="Trainers">
+                <NavDropdown.Item as={Link} to="/trainer1">Weight Training</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/runner1">Cardio</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/nutrition1">Nutrition/Weight Control</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/manager1">Gym Management</NavDropdown.Item>
+                
+              </NavDropdown>
+              {/* <Nav.Link as={Link} to="/trainers">
                 Trainers
-              </Nav.Link>
+                </Nav.Link> */}
               <Nav.Link as={Link} to="/reviews">
                 Reviews
               </Nav.Link>
@@ -81,5 +88,9 @@ const AppNavbar = () => {
     </>
   );
 };
+
+
+
+
 
 export default AppNavbar;
