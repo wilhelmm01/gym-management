@@ -37,37 +37,53 @@ function Contact() {
   };
 
   return (
-    <body class = "contact">
-       <h1>Contact a Trainer Today</h1>
-    <div class = "form">
-      <hr />
-      <form id="contact-form" onSubmit={handleSubmit}>
-        <div className="field">
-          <label for="trainer">Choose a trainer:</label>
-          <select name="trainer">
-              <option value="trainer-1">Trainer 1</option>
-              <option value="trainer-1">Trainer 2</option>
-              <option value="trainer-1">Trainer 3</option>
-              <option value="trainer-1">Trainer 4</option>
-          </select>
-          <label className="label" htmlFor="name">Your Name</label>
-          <input className="input" type="text" name="name" defaultValue={name} onBlur={handleChange} />
-        </div>
-        <div className="field">
-          <label className="label" htmlFor="email">Email Address</label>
-          <input className="input" type="email" name="email" defaultValue={email} onBlur={handleChange} />
-        </div>
-        <div className="field">
-          <label className="label" htmlFor="message">Message</label>
-          <textarea className="textarea" name="message" rows="5" defaultValue={message} onBlur={handleChange} />
-        </div>
-        {errorMessage && (
-          <div>
-            <p className="is-danger">{errorMessage}</p>
+    <body>
+    <div>
+      <div className="container">
+        <div className="card shadow">
+          <div className="card-body">
+            <div className="row">
+              <div className="col-md-6">
+                <h6>Contact Form</h6>
+                <hr />
+                <div className="form-group">
+                  <label className="mb-1">Full Name</label>
+                  <input type="text" className="form-control" placeholder="Enter Full Name" />
+                </div>
+                <div className="form-group">
+                  <label className="mb-1">Phone Number</label>
+                  <input type="text" className="form-control" placeholder="Phone Number" />
+                  <div className="form-group">
+                    <label className="mb-1">Email Address</label>
+                    <input type="text" className="form-control" placeholder="youremail@email.com" />
+                  </div>
+                  <div className="form-group">
+                    <label className="mb-1">Send Us A Message</label>
+                    {/* <input type="text"/>   */}
+                    <textarea rows="3" className="form-control" placeholder="Your Message Here..."></textarea>
+                  </div>
+                  <div className="form-group">
+                    <button type="button" className="btn btn-primary shadow">Send Message</button>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6 border-start">
+                <h5 className="main-heading">Address Information</h5>
+                <div className="underline"></div>
+                <p>
+                  1111 North High Street Columbus, Ohio 22222
+                </p>
+                <p>
+                  Phone: 614-111-1111
+                </p>
+                <p>
+                  Email: MGCfitness@gmail.com
+                </p>
+              </div>
+            </div>
           </div>
-        )}
-        <button className="button is-medium is-primary is-fullwidth" data-testid="button" type="submit">Submit</button>
-      </form>
+        </div>
+      </div>
     </div>
     </body>
   );
