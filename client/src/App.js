@@ -4,21 +4,25 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Contact from './components/Contact';
 import Reviews from './components/Reviews';
 // import Signup from './pages/Signup';
- import Trainers from './components/Trainers';
+import Trainers from './components/Trainers';
 import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div>
-  
-   <Router>
-   <Navbar />
-   
+
+      <Router>
+        <Navbar />
+
         <Switch>
 
-        <Route exact path="/trainers" component={Trainers}/>
-        <Route exact path="/reviews" component={Reviews}/>
-        <Route exact path="/contact" component={Contact}/>
+          <Route exact path="/trainers" component={Trainers} />
+          <Route exact path="/reviews" component={Reviews} />
+          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/membership" component={Membership} />
+          <Route exact path="/settings" component={Settings} />
+          <Route exact path="/upgrade" component={Upgrade} />
+          <Route exact path="/logout" component={Logout} />
         </Switch>
         {/* <Switch>
           <Route exact path="/login" component={Login}/>
@@ -27,8 +31,8 @@ function App() {
           <Route exact path="/signup" component={Signup}/>
           <Route exact path="/trainers" component={Trainers}/>
         </Switch> */}
-   
-    </Router>
+
+      </Router>
     </div>
   );
 }
