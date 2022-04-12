@@ -2,9 +2,9 @@ MGC Fitness
 
 
 User Story: 
-As a gym owner I want a website that will attract potiental customers to my gym. 
-I want the UI to keep customers engaged.
-So that customers can boook appoitments with trainers, send the team a message, and create a profile on the website. 
+*As a gym owner I want a website that will attract potiental customers to my gym. 
+*I want the UI to keep customers engaged.
+*So that customers can boook appoitments with trainers, send the team a message, and create a profile on the website. 
 
 Languages: 
   MongoDB
