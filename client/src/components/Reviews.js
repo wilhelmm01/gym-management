@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Jumbotron } from 'react-bootstrap';
+// import { Jumbotron } from 'react-bootstrap';
 
 function Reviews() {
     return (
