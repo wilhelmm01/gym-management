@@ -18,7 +18,7 @@ import Trainer1 from './components/Trainer1';
 import Runner1 from './components/Runner1';
 import Nutrition1 from './components/Nutrition1';
 import Manager1 from './components/Manager1';
-import Login from './components/Home'
+import Login from './components/LoginForm'
 import Membership from './components/Membership';
 import Signup from './components/SignupForm'
 
@@ -59,6 +59,7 @@ function App() {
         <Route exact path="/home" component={Login}/>
         <Route exact path="/membership" component={Membership}/>
         <Route exact path="/signup" component={Signup}/>
+        <Route exact path="/login" component={Login}/>
         </Switch>
         </div>
     </div>
