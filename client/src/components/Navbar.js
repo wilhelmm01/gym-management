@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar, Nav, Container, Modal, Tab } from 'react-bootstrap';
-import SignUpForm from './SignupForm';
-import LoginForm from './LoginForm';
+import { Navbar, Nav, Container, Modal, Tab, NavDropdown, } from 'react-bootstrap';
+import Login from '../components/LoginForm';
+import Signup from '../components/SignupForm';
+// import Reviews from '../components/Reviews';
+// import Trainers from '../components/Trainers';
 
 import Auth from '../utils/auth';
 
@@ -12,22 +14,38 @@ const AppNavbar = () => {
 
   return (
     <>
-      <Navbar bg='dark' variant='dark' expand='lg'>
+      <Navbar bg="primary" variant="dark" class="text-white">
         <Container fluid>
-          <Navbar.Brand as={Link} to='/'>
-            Google Books Search
+          <Navbar.Brand as={Link} to='/homepage'>
+            MGC Fitness
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='navbar' />
           <Navbar.Collapse id='navbar'>
-            <Nav className='ml-auto'>
-              <Nav.Link as={Link} to='/'>
-                Search For Books
+            <Nav className='ml-auto' >
+              <NavDropdown title="Trainers">
+                <NavDropdown.Item as={Link} to="/trainer1">Weight Training</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/runner1">Cardio</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/nutrition1">Nutrition/Weight Control</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/manager1">Gym Management</NavDropdown.Item>
+                
+              </NavDropdown>
+              <Nav.Link as={Link} to="/home">
+                Login Page
+                </Nav.Link>
+                <Nav.Link as={Link} to="/membership">
+                Membership Page
+                </Nav.Link>
+              <Nav.Link as={Link} to="/reviews">
+                Reviews
+              </Nav.Link>
+              <Nav.Link as={Link} to="/contact">
+                Contact Us
               </Nav.Link>
               {/* if user is logged in show saved books and logout */}
               {Auth.loggedIn() ? (
                 <>
                   <Nav.Link as={Link} to='/saved'>
-                    See Your Books
+                    Contact Us
                   </Nav.Link>
                   <Nav.Link onClick={Auth.logout}>Logout</Nav.Link>
                 </>
@@ -61,10 +79,10 @@ const AppNavbar = () => {
           <Modal.Body>
             <Tab.Content>
               <Tab.Pane eventKey='login'>
-                <LoginForm handleModalClose={() => setShowModal(false)} />
+                <Login handleModalClose={() => setShowModal(false)} />
               </Tab.Pane>
               <Tab.Pane eventKey='signup'>
-                <SignUpForm handleModalClose={() => setShowModal(false)} />
+                <Signup handleModalClose={() => setShowModal(false)} />
               </Tab.Pane>
             </Tab.Content>
           </Modal.Body>
@@ -73,5 +91,9 @@ const AppNavbar = () => {
     </>
   );
 };
+
+
+
+
 
 export default AppNavbar;
