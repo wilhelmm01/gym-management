@@ -1,5 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  createHttpLink,
+} from '@apollo/client';
+import { setContext } from '@apollo/client/link/context';
 // import Login from './pages/Login';
 import Contact from './components/Contact';
 import Reviews from './components/Reviews';
@@ -13,14 +20,33 @@ import Nutrition1 from './components/Nutrition1';
 import Manager1 from './components/Manager1';
 import Login from './components/Home'
 import Membership from './components/Membership';
+import Signup from './components/SignupForm'
+
+const httpLink = createHttpLink({
+  uri: 'http://localhost:3001/graphql',
+});
+const authLink = setContext((_, { headers }) => {
+  const token = localStorage.getItem('id_token');
+  return {
+    headers: {
+      ...headers,
+      authorization: token ? `Bearer ${token}` : '',
+    },
+  };
+});
+
+const client = new ApolloClient({
+  link: authLink.concat(httpLink),
+  cache: new InMemoryCache(),
+});
 function App() {
   return (
-    <div>
+    <ApolloProvider client={client}>
+      <Router>
+        <Navbar />
+    <div className="container">
   
-   <Router>
-   <Navbar />
-   {/* <HomePage /> */}
-   
+   <div className="container">
         <Switch>
         <Route exact path="/homepage" component={Home}/> 
         <Route exact path="/trainers" component={Trainers}/>
@@ -32,18 +58,12 @@ function App() {
         <Route exact path="/manager1" component={Manager1}/>
         <Route exact path="/home" component={Login}/>
         <Route exact path="/membership" component={Membership}/>
-
+        <Route exact path="/signup" component={Signup}/>
         </Switch>
-        {/* <Switch>
-          <Route exact path="/login" component={Login}/>
-          <Route exact path="/contact" component={Contact}/>
-          <Route exact path="/reviews" component={Reviews}/>
-          <Route exact path="/signup" component={Signup}/>
-          <Route exact path="/trainers" component={Trainers}/>
-        </Switch> */}
-
-      </Router>
+        </div>
     </div>
+    </Router>
+    </ApolloProvider>
   );
 }
 
