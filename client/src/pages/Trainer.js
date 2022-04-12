@@ -1,15 +1,15 @@
-// import React from 'react';
-// import Trainers from '../components/Trainers';
+import React from 'react';
+import Trainers from '../components/Trainers';
 
 
-// function Trainer () {
+function Trainer () {
 
-//     return (
-//         <>
-//             <Trainers/>   
-//             {/* ^^ will import what is from the component */}
-//         </>
-//     );
-// };
+    return (
+        <>
+            <Trainers/>   
+            {/* ^^ will import what is from the component */}
+        </>
+    );
+};
 
-// export default Trainer;
+export default Trainer;
