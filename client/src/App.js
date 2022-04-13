@@ -23,7 +23,7 @@ import Membership from './components/Membership';
 import Signup from './components/SignupForm'
 
 const httpLink = createHttpLink({
-  uri: 'http://localhost:3001/graphql',
+  uri: '/graphql',
 });
 const authLink = setContext((_, { headers }) => {
   const token = localStorage.getItem('id_token');
