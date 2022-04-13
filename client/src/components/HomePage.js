@@ -1,10 +1,5 @@
 import React from 'react';
-// import LoginForm from '../components/LoginForm';
-// import  Navbar  from '../components/Navbar';
-// import SignupForm from '../components/SignupForm';
-// import {Link} from 'react-router-dom';
-// import Login from '../components/LoginForm';
-// import Signup from '../components/SignupForm'
+
 const Home = () => {
     return (
 <body class = "home">
