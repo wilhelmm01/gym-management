@@ -45,9 +45,11 @@ function App() {
     <ApolloProvider client={client}>
      
       <Router>
+        
         <Navbar />
     
         <Switch>
+        <Route exact path="/" component={Home}/>
         <Route exact path="/homepage" component={Home}/> 
         <Route exact path="/trainers" component={Trainers}/>
         <Route exact path="/reviews" component={Reviews}/>
@@ -57,12 +59,12 @@ function App() {
         <Route exact path="/nutrition1" component={Nutrition1}/>
         <Route exact path="/manager1" component={Manager1}/>
         <Route exact path="/home" component={Login}/>
-        <Route exact path="/membership" component={Membership}/>
+        <Route exact path="/membership/:username?" component={Membership}/>
         <Route exact path="/signup" component={Signup}/>
         <Route exact path="/login" component={Login}/>
         </Switch>
-     
-    
+        
+       
     </Router>
    
     

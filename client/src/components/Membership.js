@@ -1,7 +1,9 @@
 import React from 'react';
 
-function Membership() {
 
+function Membership() {
+  
+    
     return (
         <body id="membership">
         <div>
@@ -52,5 +54,7 @@ function Membership() {
         </body>
     );
 };
+
+
 
 export default Membership;

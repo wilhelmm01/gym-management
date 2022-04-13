@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import { Navbar, Nav, Container, Modal, Tab, NavDropdown, } from 'react-bootstrap';
 import Login from '../components/LoginForm';
 import Signup from '../components/SignupForm';
-// import Reviews from '../components/Reviews';
-// import Trainers from '../components/Trainers';
+import { Redirect, useParams } from 'react-router-dom';
+
 
 import Auth from '../utils/auth';
 
@@ -43,7 +43,9 @@ const AppNavbar = () => {
               </Nav.Link>
               {/* if user is logged in show saved books and logout */}
               {Auth.loggedIn() ? (
-                <>
+               <>
+               <Redirect to ="/membership"></Redirect>
+                 
                   {/* <Nav.Link as={Link} to='/saved'>
                     Contact Us
                   </Nav.Link> */}
