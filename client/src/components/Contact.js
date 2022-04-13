@@ -37,14 +37,14 @@ function Contact() {
   };
 
   return (
-    <body>
+    <body id="contact-body">
     <div>
       <div className="container">
         <div className="card shadow">
           <div className="card-body">
             <div className="row">
               <div className="col-md-6">
-                <h6>Contact Form</h6>
+                <h5 id="contact-form">Contact Form</h5>
                 <hr />
                 <div className="form-group">
                   <label className="mb-1">Full Name</label>
@@ -68,7 +68,7 @@ function Contact() {
                 </div>
               </div>
               <div className="col-md-6 border-start">
-                <h5 className="main-heading">Address Information</h5>
+                <h5 id="address-info" className="main-heading">Address Information</h5>
                 <div className="underline"></div>
                 <p>
                   1111 North High Street Columbus, Ohio 22222
@@ -85,6 +85,9 @@ function Contact() {
         </div>
       </div>
     </div>
+    <div class="footer">
+<p>&#169; MGC Fitness, 2022</p>
+</div>
     </body>
   );
 }

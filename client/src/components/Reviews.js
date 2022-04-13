@@ -33,7 +33,9 @@ function Reviews() {
             <p class = "from"> Anonymous, OH</p>
             </div>
         </div>
-
+        <div class="footer">
+<p> MGC Fitness, 2022</p>
+</div>
         </body>
         // </Jumbotron>
     )
