@@ -13,10 +13,18 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^5.1.0"
+    "concurrently": "^5.3.0"
   },
   "dependencies": {
     "apollo-server-express": "^3.6.7",
     "graphql": "^16.3.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wilhelmm01/gym-management.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wilhelmm01/gym-management/issues"
+  },
+  "homepage": "https://github.com/wilhelmm01/gym-management#readme"
 }
