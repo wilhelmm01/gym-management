@@ -29,9 +29,9 @@ const AppNavbar = () => {
                 <NavDropdown.Item as={Link} to="/manager1">Gym Management</NavDropdown.Item>
                 
               </NavDropdown>
-              <Nav.Link as={Link} to="/home">
+              {/* <Nav.Link as={Link} to="/home">
                 Login Page
-                </Nav.Link>
+                </Nav.Link> */}
                 <Nav.Link as={Link} to="/membership">
                 Membership Page
                 </Nav.Link>
@@ -44,9 +44,9 @@ const AppNavbar = () => {
               {/* if user is logged in show saved books and logout */}
               {Auth.loggedIn() ? (
                 <>
-                  <Nav.Link as={Link} to='/saved'>
+                  {/* <Nav.Link as={Link} to='/saved'>
                     Contact Us
-                  </Nav.Link>
+                  </Nav.Link> */}
                   <Nav.Link onClick={Auth.logout}>Logout</Nav.Link>
                 </>
               ) : (
