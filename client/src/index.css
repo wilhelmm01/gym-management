@@ -21,9 +21,11 @@ h6 {
 }
 .home {
   font-family: Arial;
-  padding: 10px;
+  /* padding: 10px; */
   background:black;
 }
+
+
 .trhome {
   font-family: Arial;
   padding: 10px; 
@@ -126,14 +128,15 @@ h6 {
 
 /* Fake image */
 .fakeimg {
-    /* background-image: url(./images/gym.jpg);  */
-    /* background-size: cover; */
-    /* background-repeat: no-repeat; */
-    width: 35%; 
-    height:fit-content;
+    /* background-image: url(./images/gym.jpg);  
+     background-size: cover; 
+    background-repeat: no-repeat; */
+    /* width: 35%; 
+    height:auto;  */
+    
     /* height: 200px; */
   /* background-color: #aaa; */
-  width: 100%;
+  /* width: 100%; */
    /* padding: 20px;  */
   float: right;
   
@@ -148,6 +151,7 @@ h2 {
   /* background-size: cover; */
   width: 35%;
   height:auto;
+ 
 /* background-color: #aaa; */
 /* width: 100%; */
   /* padding: 20px;   */
@@ -159,7 +163,7 @@ h2 {
 /* Add a card effect for articles */
 .cardr {
   background-color: white;
-  padding: 20px;
+  padding: 10px;
   margin-top: 20px;
   float: right;
   /* height: 75% */
@@ -174,15 +178,23 @@ img {
 .l {
   width: 50%;
   height: auto;
-  max-height: 25%;
+  max-height: 20%;
   float: left;
+  padding-right: 5px;
+}
+.r {
+  width: 50%;
+  height: auto;
+  max-height: 400px;
+  float: right;
   padding-right: 5px;
 }
 .cardl {
   background-color: white;
-  padding: 20px;
+  padding: 10px;
   margin-top: 20px;
-  /* height: 75% */
+  padding-left: 20px;
+  
 }
 
 .cardtr {
@@ -211,20 +223,24 @@ background-color: #007bff;
 
 .card4 {
   background-color: rgb(182, 181, 181);
-  padding: 20px;
+  padding-left: 20px;
   margin-top: 12px;
   float: left;
   width: 100%;
   font-weight: bold;
 }
+.card4 p{
+  margin: 0%;
+}
 
 .card5 {
   background-color: rgb(182, 181, 181);
-  padding: 20px;
+  padding: 14px;
   margin-top: 12px;
   float: left;
   width: 100%;
   font-weight: bold;
+  justify-content: center;
 }
 
 
@@ -235,6 +251,7 @@ background-color: #007bff;
   text-align: center;
    margin: 5px 2px; 
   color: white;
+  justify-content: center;
 }
 
 .fa:hover {
@@ -273,7 +290,7 @@ background-color: #007bff;
   margin-top: 20px;
   color: white;
   margin-bottom: 0%;
-  position: absolute;
+  position: relative ;
   width: 100%;
 
 }

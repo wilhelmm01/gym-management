@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 function Manager1() {
     return (
        
-        <body class = "trhome">
+        <body class = "trhome d-flex flex-column min-vh-100">
             <h1>Jamie "Leader" Smith</h1>
 
         <div class="row">
@@ -45,7 +45,7 @@ function Manager1() {
             </div>
           </div>
           </div>
-          <div class="footer">
+          <div class="footer mt-auto fixed-bottom">
 <p>&#169; MGC Fitness, 2022</p>
 </div>
           </body>

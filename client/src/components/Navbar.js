@@ -14,7 +14,7 @@ const AppNavbar = () => {
 
   return (
     <>
-      <Navbar bg="primary" variant="dark" class="text-white">
+      <Navbar bg="primary" variant="dark" class="text-white navbar-fixed-top navbar-expand-md">
         <Container fluid>
           <Navbar.Brand as={Link} to='/homepage'>
             MGC Fitness

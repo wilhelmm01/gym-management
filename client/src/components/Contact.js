@@ -37,7 +37,7 @@ function Contact() {
   };
 
   return (
-    <body id="contact-body">
+    <body id="contact-body" class="d-flex flex-column min-vh-100">
     <div>
       <div className="container">
         <div className="card shadow">
@@ -85,7 +85,7 @@ function Contact() {
         </div>
       </div>
     </div>
-    <div class="footer">
+    <div class="footer mt-auto fixed-bottom">
 <p>&#169; MGC Fitness, 2022</p>
 </div>
     </body>

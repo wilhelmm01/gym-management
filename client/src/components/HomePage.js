@@ -2,25 +2,31 @@ import React from 'react';
 
 const Home = () => {
     return (
-<body class = "home">
+<body class = "home d-flex flex-column min-vh-100">
 <div class="row">
   <div class="leftcolumn">
     <div class="cardl">
       <div class="fakeimg">
       </div>
-      <img src ="gym.jpg"width="100" height="100"></img>
+      <img src ="gym.jpg" class="r" alt="Responsive image"></img> 
       <h2>Our Gym</h2>
-      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra justo nec ultrices dui sapien eget. In nibh mauris cursus mattis molestie. Adipiscing elit pellentesque habitant morbi tristique senectus et. Arcu vitae elementum curabitur vitae nunc sed velit dignissim. Nulla malesuada pellentesque elit eget gravida. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Lectus urna duis convallis convallis tellus id interdum. Lectus quam id leo in vitae. Leo a diam sollicitudin tempor id eu.</p>
-      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra justo nec ultrices dui sapien eget. In nibh mauris cursus mattis molestie. Adipiscing elit pellentesque habitant morbi tristique senectus et. Arcu vitae elementum curabitur vitae nunc sed velit dignissim. Nulla malesuada pellentesque elit eget gravida. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Lectus urna duis convallis convallis tellus id interdum. Lectus quam id leo in vitae. Leo a diam sollicitudin tempor id eu.</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <p>MGC Fitness, located in the suburbs of Columbus, Ohio is a family owned and operated. Although we are not biologically related, the atmosphere is like a family. Established in 2022, we already have many customers who joined from larger gyms in an effort to feel more at home.  We offer many personalized training opportunities to include: cardo, weight, nutritionist. </p>
+      <ul>
+        <li>Frendly Staff</li>
+        <li>24hr Gym Access</li>
+        <li>Security</li>
+        <li>RESULTS</li>
+      </ul>
+      <p>Every member of our staff is highly educated and award winning. This gym was created out of passion and pure joy. We love what we do and take great pride in seeing the transformations. We are here to help, not judge and look forward to being a part of your journey! </p>
+      <p>No Judgement at MGC!</p>
     </div>
     <div class="cardr">
     <div class="fakeimgr"></div>
     <img class="l" src ="run.jpg" width="100" height="100"></img>
       <h2>Values</h2>
       <h5>Our Vision</h5>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id aliquet risus feugiat in ante metus dictum at tempor. Morbi quis commodo odio aenean. Sed elementum tempus egestas sed sed risus pretium. Faucibus nisl tincidunt eget nullam non nisi est. Posuere ac ut consequat semper viverra nam libero justo. Risus nullam eget felis eget nunc lobortis. Aliquam etiam erat velit scelerisque in. Magna sit amet purus gravida. Dui sapien eget mi proin sed libero.</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <p>Our mission is to bring results to every member of our gym. Our one of a kind, rockstar instructors guide you through an inspirational, meditative fitness experience that’s designed to benefit the body, mind, and soul. We do not take for granted the number of gym options available. We strive to be part of your daily routing for a healthier lifestyle. We are proud to call our patrons friends!</p>
+      <p>We take exceptional pride in our family friendly, clean, and safe space to exercise. A healthier community is our ultimate goal. We pledge to provide the necessary tools, education, and skills to allow you to be a better version of yourself. </p>
     </div>
   </div>
   <div class="rightcolumn">
@@ -67,7 +73,7 @@ const Home = () => {
     </div>
   </div>
 </div>
-<div class="footer">
+<div class="footer mt-auto fixed-bottom ">
 <p>&#169; MGC Fitness, 2022</p>
 </div>
 </body>

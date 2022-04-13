@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 function Runner1() {
     return (
        
-        <body class = "trhome">
+        <body class = "trhome d-flex flex-column min-vh-100">
             <h1>Jane "I Love to Run" Sprinter</h1>
 
         <div class="row">

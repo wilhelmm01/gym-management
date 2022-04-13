@@ -5,7 +5,7 @@ function Membership() {
   
     
     return (
-        <body id="membership">
+        <body id="membership" class= "d-flex flex-column min-vh-100 ">
         <div>
             <div className="box-container">
             <div class="text-center">
@@ -48,7 +48,7 @@ function Membership() {
                 </div>
             </div>
         </div>
-        <div class="footer">
+        <div class="footer mt-auto fixed-bottom">
 <p>&#169; MGC Fitness, 2022</p>
 </div>
         </body>
